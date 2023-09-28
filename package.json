@@ -1,0 +1,47 @@
+{
+	"name": "score-heap",
+	"version": "0.0.0",
+	"description": "A heap optimized for frequent updates.",
+	"homepage": "https://github.com/obsius/score-heap",
+	"author": "Jeff Seaman <mr.jeffrey.seaman@gmail.com> (https://www.ngc6822.com)",
+	"license": "MIT",
+	"main": "lib/index.js",
+	"files": [
+		"/lib"
+	],
+	"scripts": {
+		"prepare": "rollup --bundleConfigAsCjs -c",
+		"start": "nodemon --inspect dev.js --exec babel-node"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.23.0",
+		"@babel/node": "^7.22.19",
+		"@babel/plugin-proposal-class-properties": "^7.18.6",
+		"@babel/preset-env": "^7.22.20",
+		"@rollup/plugin-babel": "^6.0.3",
+		"nodemon": "^3.0.1",
+		"rollup": "^3.29.3"
+	},
+	"babel": {
+		"plugins": [
+			"@babel/plugin-proposal-class-properties"
+		],
+		"presets": [
+			[
+				"@babel/preset-env",
+				{
+					"targets": {
+						"node": "current"
+					}
+				}
+			]
+		]
+	},
+	"keywords": [
+		"scoreheap",
+		"heap",
+		"score",
+		"list",
+		"sorted"
+	]
+}

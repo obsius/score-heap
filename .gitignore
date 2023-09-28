@@ -1,0 +1,11 @@
+/node_modules
+/coverage
+
+.DS_Store
+.env
+.idea
+.vscode
+*.lnk
+
+package-lock.json
+npm-debug.log
