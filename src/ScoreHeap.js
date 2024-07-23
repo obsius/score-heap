@@ -22,7 +22,7 @@ export default class ScoreHeap {
 	/**
 	 * @constructs ScoreHeap
 	 * 
-	 * @param {Array<Array<number, number>>} indexScores - An array of [index, score] to build the heap from
+	 * @param {Array<Array<number, number>>} indexScores - An array of [index, score] to build the heap from (score must be an int32)
 	 * @param {number} maxLength - The length of the underlying (unpassed) source array (must never expand beyond this value)
 	 */
 	constructor(indexScores, maxLength) {
@@ -147,7 +147,7 @@ export default class ScoreHeap {
 	 * Update an index in the heap (index does not have to be in the heap yet).
 	 * 
 	 * @param {number} index - Index to update (or insert)
-	 * @param {number} score - Score of the index
+	 * @param {number} score - Score of the index (must be an int32)
 	 */
 	update(index, score) {
 
